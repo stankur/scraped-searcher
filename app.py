@@ -7,7 +7,6 @@ import os
 from dotenv import load_dotenv
 import json
 from pathlib import Path
-from pprint import pprint
 
 
 load_dotenv()
@@ -97,7 +96,3 @@ def get_combined_description(dict):
         acc += f"{key}\n{dict[key]}\n\n"
 
     return acc
-
-
-
-

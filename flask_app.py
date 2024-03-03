@@ -16,7 +16,7 @@ load_dotenv()
 embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY")) 
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app, origins=["https://stankur.github.io/coop-board/"])
 
 @app.route('/')
 def index():
